@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Happy Birthday — A Love Letter ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Scene 1: Balloons (opening) -->
+    <div id="scene-balloons" class="scene">
+      <div id="balloon-layer"></div>
+    </div>
+
+    <!-- Scene 2: Envelope / Mail -->
+      <div id="scene-mail" class="scene hidden">
+      <div id="envelope" role="button" tabindex="0" aria-label="Open letter">
+        <div class="env-back"></div>
+        <div class="env-front">
+          <div class="heart-seal">❤</div>
+        </div>
+      </div>
+      <div id="mail-text">Open your letter 💌</div>
+    </div>
+
+    <!-- Scene 3: Photo story -->
+    <div id="scene-photos" class="scene hidden">
+      <div id="photo-stage">
+        <div class="photo-frame" id="photo1"><img src="assets/placeholder1.svg" alt="Photo 1"></div>
+        <div class="photo-frame" id="photo2"><img src="assets/placeholder2.svg" alt="Photo 2"></div>
+        <div class="photo-frame" id="photo3"><img src="assets/placeholder3.svg" alt="Photo 3"></div>
+        <div class="photo-frame" id="photo4"><img src="assets/placeholder4.svg" alt="Photo 4"></div>
+      </div>
+    </div>
+
+    <!-- Scene 4: Continue button -->
+    <div id="scene-continue" class="scene hidden">
+      <button id="continueBtn">One more thing… 💖</button>
+    </div>
+
+    <!-- Scene 5: Love letter (typewriter) -->
+    <div id="scene-letter" class="scene hidden">
+      <div id="overlay"></div>
+      <div id="letter-card" role="dialog" aria-live="polite">
+        <div id="letter-content">
+          <pre id="typewriter" class="typewriter">We met online in 2022, in the most unexpected way, while playing Minecraft.
+What started as a simple game slowly turned into late-night conversations, laughter, comfort, and a connection I never planned but instantly cherished.
+
+In 2022, friendship turned into love.
+And even though there was distance between us, our hearts never felt far apart.
+
+Three years later, on November 27, 2025, the moment we had waited for finally came — we met in real life.
+From pixels to reality, from screens to smiles, everything felt surreal and perfect, like our story was always meant to happen.
+
+You are my safe place, my happiness, and my favorite person.
+Thank you for choosing me every day, for loving me the way you do, and for being my constant through every level of life.
+
+On your birthday, I just want you to know this:
+No matter where life takes us, no matter how many chapters are still unwritten, I will always be right beside you — loving you, supporting you, and growing with you.
+
+Happy Birthday, my love ❤️
+From a game that brought us together to a life we are building together — forever us.</pre>
+        </div>
+        <div id="letter-footer">From a game that brought us together to a life we are building together — forever us.</div>
+      </div>
+    </div>
+
+    <!-- Ambient layers -->
+    <div id="ambient">
+      <div id="floating-hearts"></div>
+      <div id="sparkles"></div>
+    </div>
+  </div>
+
+  <!-- Hidden photo input (photo-picker) -->
+  <input id="photoInput" type="file" accept="image/*" multiple style="display:none" />
+  <script src="script.js"></script>
+</body>
+</html>
